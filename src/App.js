@@ -4,7 +4,7 @@ import ClipboardIcon from "./components/icons/ClipboardIcon";
 
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import Navbar from './components/Navbar'
 import { COPY_SUCCESS } from "./messages";
 import {
   numbers,
@@ -126,6 +126,8 @@ function App() {
   };
 
   return (
+    <div>
+    <Navbar/>
     <div className="m-container">
     
 
@@ -205,6 +207,7 @@ function App() {
           Generate Password
         </button>
       </div>
+    </div>
     </div>
   );
 }
